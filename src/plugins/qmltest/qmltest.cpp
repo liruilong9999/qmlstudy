@@ -24,9 +24,8 @@ QString QmlTest::getname()
 
 bool QmlTest::init()
 {
-    m_pDataWidget = new DataWidget;
-    m_TestClass   = new TestClass;
-    connect(m_pDataWidget, &DataWidget::valueChangedSignal, m_TestClass, &TestClass::changeDataSlot);
+    m_pDataWidget     = new DataWidget;
+    m_TestClass       = new TestClass;
     m_actionTestClass = new QAction(QStringLiteral("按钮1"));
     if (m_actionTestClass)
     {
@@ -47,4 +46,5 @@ bool QmlTest::clean()
 
 void QmlTest::addTestClass()
 {
+    m_pDataWidget->isHidden() ? m_pDataWidget->show() : m_pDataWidget->hide();
 }

@@ -8,7 +8,7 @@ ApplicationWindow {
     height: 300
     title: "测试窗口"
 
-    property QString lineStr: "默认参数"
+    property string lineStr: "默认参数"
 
     Rectangle{
         width: 30

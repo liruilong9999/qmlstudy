@@ -8,6 +8,7 @@ class QmlCpp : public QObject
     Q_OBJECT
     Q_PROPERTY(QString lineStr READ lineStr WRITE setLineStr NOTIFY lineStrChanged)
 public:
+    QmlCpp(QObject * obj = nullptr);
     QString lineStr();
     void    setLineStr(QString str);
 

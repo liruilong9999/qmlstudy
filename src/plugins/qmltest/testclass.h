@@ -5,6 +5,13 @@
 #include <QQuickView>
 #include <QQmlContext>
 #include "qmlcpp.h"
+#include <QQmlApplicationEngine>
+#include <QQmlEngine>
+#include <QQmlComponent>
+#include <QQuickView>
+#include <QWindow>
+
+#include <QCoreApplication>
 
 class TestClass : public QObject
 {
@@ -21,6 +28,8 @@ public slots:
 private:
     QQuickView * view;
     QmlCpp *     m_pQmlCpp;
+
+    QQmlApplicationEngine engine;
 };
 
 #endif
