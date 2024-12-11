@@ -1,0 +1,8 @@
+﻿{
+    "author" : "lrl",
+    "date" : "2024/12/11",
+    "name" : "qmltest",
+    "version" : "1.0.0",
+    "des" : "qml插件",
+    "dependencies" : []
+}
