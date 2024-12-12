@@ -7,8 +7,12 @@ ApplicationWindow {
     width: 400
     height: 300
     title: "测试窗口"
+    property string lineStr: qmlCpp.lineStr
 
-    property string lineStr: "默认参数"
+    QmlCpp{
+        id:qmlCpp
+    }
+
 
     Rectangle{
         width: 30

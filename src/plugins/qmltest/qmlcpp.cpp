@@ -4,7 +4,9 @@
 
 QmlCpp::QmlCpp(QObject * obj)
     : QObject(obj)
+    , m_lineStr("xxxx")
 {
+    qDebug() << 11111111111;
     LEventBus::getInstance()->subscribe("changeData_topic", [=](const QVariant & var) {
         changeValue(var.toString());
     });

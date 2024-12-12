@@ -4,6 +4,7 @@ include($$PWD/../../../qtcode.pri)
 
 CONFIG += c++11
 CONFIG += plugin
+CONFIG += qml_debug
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
